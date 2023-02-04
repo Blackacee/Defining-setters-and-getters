@@ -1,2 +1,12 @@
 # Defining-setters-and-getters
-Defining setters and getters using Object.defineObject
+
+var setValue;
+var obj = {};
+Object.defineProperty(obj, "objProperty", {
+ get: function(){
+ return "a value";
+ },
+ set: function(value){
+ setValue = value;
+ }
+});
